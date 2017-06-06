@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue-Bootstrap-FormsPree</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container c1">
+            <div class="row c2">
+                <h1>{{ titulo }}</h1>
+            </div>
+            <div class="row c2">
+                <div class="col">
+                    <form action="https://formspree.io/fersot7@gmail.com" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" value="">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" value="">
+                    <input type="submit" name="enviar" value="Enviar">
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/vue"></script>
+<script src="app.js"></script>
+</html>
